@@ -1,0 +1,96 @@
+1. connection opened
+2. server hello
+3. identify
+4. ping
+5. server ping ack
+6. server ready
+7. guild create
+8. guild create
+9. ping immediately
+10. ping
+11. server ping ack
+12. ping immediately
+13. ping
+14. server ping ack.....
+15. presence update
+
+
+make a filter for file log
+
+
+
+
+SERVER READY {
+    first sequence
+    api version
+    bot user object
+    resume gateway url
+    guilds in which the bot is present
+}
+
+GUILD CREATE {
+    second sequence
+    guild members
+    presences (probably online users)
+    guild id
+    guild name
+    member count
+    channels
+    roles
+}
+
+PRESENCE UPDATE {
+    user id
+    guild id
+    new status
+    roles
+}
+
+
+
+GUILD OBJECT (from HTTP response) PROPERTIES:
+id
+name
+icon
+description
+home_header
+splash
+discovery_splash
+features
+banner
+owner_id
+application_id
+region
+afk_channel_id
+afk_timeout
+system_channel_id
+system_channel_flags
+widget_enabled
+widget_channel_id
+verification_level
+roles
+default_message_notifications
+mfa_level
+explicit_content_filter
+max_presences
+max_members
+max_stage_video_channel_users
+max_video_channel_users
+vanity_url_code
+premium_tier
+premium_subscription_count
+preferred_locale
+rules_channel_id
+safety_alerts_channel_id
+public_updates_channel_id
+hub_type
+premium_progress_bar_enabled
+latest_onboarding_question_id
+nsfw
+nsfw_level
+emojis
+stickers
+incidents_data
+inventory_settings
+embed_enabled
+embed_channel_id

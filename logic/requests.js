@@ -5,19 +5,23 @@ const requests = {
 
     token: token,
     base_url: "https://discord.com/api",
-    options: {
-        method: "GET",
-        headers: {
-            "Authorization": token,
-            "Content-Type": "application/json",
-        },
-    },
 
     request: async function (endpoint, method, body) {
-        this.options.method = method || this.options.method 
-        this.options.body = body || this.options.body
+        let options = {
+            method: "GET",
+            headers: {
+                "Authorization": token,
+                //"Content-Type": "application/json",
+            },
+        }
+        options.method = method || options.method
+        options.body = body || options.body
 
-        let response = await fetch(this.base_url + endpoint, this.options)
+        if (options.method !== "GET") {
+            options.headers["Content-Type"] = "application/json"
+        }
+
+        let response = await fetch(this.base_url + endpoint, options)
         return response
     },
 

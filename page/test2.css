@@ -1,0 +1,162 @@
+html {
+    color-scheme: dark;
+}
+
+* {
+    font-family: monospace;
+    transition: all 0.1s;
+}
+
+h1, h2 {
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    font-size: 120%;
+    list-style-type: none;
+}
+
+a {
+    color: #aaa;
+    border: 1px solid #aaa;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #222;
+}
+
+button {
+    background-color: #448;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+@keyframes rotate {
+    0% {
+	transform: rotate(0deg);
+    }
+	/*   50% {*/
+	/*transform: rotate(180deg);*/
+	/*   }*/
+    100% {
+	transform: rotate(360deg);
+    }
+}
+
+button:hover {
+    background-color: #336;
+}
+
+button:active {
+    background-color: #224;
+}
+
+#sendbtn:active {
+    animation: rotate 0.2s;
+}
+
+.headerdiv {
+    display: flex;
+    background-color: #111111;
+    gap: 5px;
+}
+
+.headerdiv > a {
+    align-content: center;
+
+}
+
+.headerelement {
+
+}
+
+#headerimg {
+    max-height: 36.5px;
+}
+
+#headertrademark > div {
+    display: flex;
+    flex-flow: column;
+}
+
+.container {
+    background-color: #222;
+    padding: 20px;
+    margin: 20px 10px; /* first y, second x */
+    border-radius: 20px;
+}
+
+.deleteheader {
+    background-color: #222;
+    border-color: #eee;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 10px;
+    color: red;
+    font-size: 80%;
+    padding: 5px 10px;
+}
+
+.deleteheader:hover {
+    background-color: #f00;
+    color: #eee;
+}
+
+.deleteheader:active {
+    background-color: #a00;
+}
+
+.flexdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /*padding: 0 30%;*/
+}
+
+.flexdiv > h1 {
+    margin: 0;
+    height: 1em;
+}
+
+.tab {
+    position: relative;
+    top: 50px;
+    padding-bottom: 35px;
+    border-radius: 15px;
+}
+
+.tab-inactive {
+    opacity: 50%;
+}
+
+#requesturl {
+    min-width: 40%;
+}
+
+#requestmethodlabel {
+    margin-bottom: 0;
+}
+
+#headerslist {
+    background-color: #112;
+    border-radius: 20px;
+    padding: 10px;
+    resize: horizontal;
+    overflow-y: auto;
+    height: 250px;
+    position: relative;
+    z-index: 1;
+}

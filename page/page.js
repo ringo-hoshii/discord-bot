@@ -1,0 +1,173 @@
+//
+//
+// TAKE NOTES:
+// <HTMLelement>.inert = true
+// makes an element inactive i.e. for the user it's just a dead non-interactive block like an image
+//
+// found that out accidentally by trying to access innerHTML
+//
+
+
+const token = "Bot MTEwNDY4NDUwNzIyNDg3OTIxNQ.GI7eqD.7erfzzHScGaQ3FuXUcYFp8tDGA93GwrQxMbeBk"
+let headerslist
+let testheadername
+let saveddata = JSON.parse(localStorage.getItem("headersvalues"))
+let rows
+
+function loadheaders() {
+    headerslist = document.getElementById("headerslist")
+    rows = headerslist.children
+
+    let length = saveddata.length
+    let i = 0
+
+    while (i < length) {
+	rows[i].getElementsByClassName("useheader")[0].checked = saveddata[i].useheader
+	rows[i].getElementsByClassName("headername")[0].value = saveddata[i].headername
+	rows[i].getElementsByClassName("headervalue")[0].value = saveddata[i].headervalue
+	i++
+    }
+}
+
+function test() {
+    testheadername = document.getElementsByClassName("headername")[0]
+    testheadername.value = 123
+}
+
+function body_onload() {
+    headerslist = document.getElementById("headerslist")
+
+    document.getElementById("addheader").onclick = addheader
+    let headershtml = localStorage.getItem("headershtml")
+    if (headershtml.search("[<>]") !== -1) {
+	document.getElementById("headerslist").innerHTML = headershtml
+    } else {
+	addheader()
+    }
+
+    loadheaders()
+}
+
+function send() {
+    let url = get_request_url()
+    let method = get_selected_method()
+    let headers = get_headers()
+
+    let request = new Request(url, {
+	method: method,
+	headers: headers,
+    })
+
+    let response
+    fetch(request).then(res => {
+	response = res
+    })
+}
+
+function get_request_url() {
+    let requesturlelement = document.getElementById("requesturl")
+    return requesturlelement.value
+}
+
+function get_selected_method() {
+   return (document.querySelector('input[name="requestmethod"]:checked').value) 
+}
+
+function get_headers() {
+    let headers = []
+
+    let headerelements = document.getElementById("headerslist").children
+    let length = headerelements.length
+    let i = 0
+    while (i < length) {
+	let useheader = headerelements[i].getElementsByClassName("useheader")[0].checked
+	if (!useheader) {
+	    i++
+	    continue
+	}
+	let headername = headerelements[i].getElementsByClassName("headername")[0].value
+	let headervalue = headerelements[i].getElementsByClassName("headervalue")[0].value
+	let header = {}
+	header[headername] = headervalue
+	headers.push(header)
+
+	i++
+    }
+
+    if (headers.length === 0) {
+	return null
+    }
+    return headers
+}
+
+function saveheaders() {
+    let headerslist = document.getElementById("headerslist")
+    let values = []
+    let length = headerslist.children.length
+    let i = 0
+    while (i < length) {
+	let child = headerslist.children[i]
+	let data = {}
+	data.useheader = child.getElementsByClassName("useheader")[0].checked
+	data.headername = child.getElementsByClassName("headername")[0].value
+	data.headervalue = child.getElementsByClassName("headervalue")[0].value
+	values.push(data)
+	i++
+    }
+
+    localStorage.setItem("headershtml", headerslist.innerHTML)
+    localStorage.setItem("headersvalues", JSON.stringify(values))
+}
+
+function oldloadheaders() {
+    let saveddata = JSON.parse(localStorage.getItem("headersvalues"))
+    let headerslist = document.getElementById("headerslist")
+    let rows = headerslist.children
+
+    let length = saveddata.length
+    console.log(length)
+    let i = 0
+    while (i < length) {
+	let useheader = rows[i].getElementsByClassName("useheader")[0]
+	let headername = rows[i].getElementsByClassName("headername")[0]
+	let headervalue = rows[i].getElementsByClassName("headervalue")[0]
+
+	useheader.checked = saveddata[i].useheader
+	//headername.value = saveddata[i].headername
+	headername.value = "123"
+	headervalue.value = saveddata[i].headervalue
+
+	rows[i].children[0].checked = saveddata[i].checked
+	rows[i].children[1].value = saveddata[i].headersname
+
+	i++
+    }
+
+}
+
+function onheadersedited() {
+    //console.log(document.getElementsByClassName("headername")[0].value)
+    saveheaders()
+}
+
+function addheader(name, value) {
+    let headernameplaceholder = "Authorization"
+    let headervalueplaceholder = "Bot <TOKEN>"
+    let headervaluevalue = token
+    let headerslist = document.getElementById("headerslist")
+    let lastchild = headerslist.children[headerslist.children.length - 1]
+    let newchild = document.createElement("li")
+    newchild.innerHTML = `
+	<input type="checkbox" class="useheader" oninput="onheadersedited()" checked>
+	<input class="headername" oninput="onheadersedited()" placeholder="${headernameplaceholder}" value="${headernameplaceholder}">
+	<input class="headervalue" oninput="onheadersedited()" placeholder="${headervalueplaceholder}" value="${headervaluevalue}">
+	<button class="deleteheader" onclick="deleteheader(this)">Delete</button>
+    `
+    headerslist.appendChild(newchild)
+    onheadersedited()
+}
+
+function deleteheader(button) {
+    button.parentElement.remove()
+    onheadersedited()
+}

@@ -11,19 +11,15 @@
     <body onload="body_onload(event)">
 	<header>
 	    <div class="headerdiv">
-			<div id="headertrademark">
+			<div id="headertrademark" onclick="location.href = 'index.html'">
 				<img src="favicon.ico" id="headerimg">
-				<span>
+				<div>
 					<h1>Orion</h1>
 					<p>Multi-Purpose Bot</p>
-				</span>
+				</div>
 			</div>
-		<!--<div class="headerelement">-->
 		    <a href="index.html">Home</a>
-		<!--</div>-->
-		<!--<div class="headerelement">-->
 		    <a href="page2.html">Test Page</a>
-		<!--</div>-->
 	    </div>
 	</header>
 	<div class="flexdiv">
@@ -62,11 +58,12 @@
 		</div>
 	    </div>
 	    <div class="headers">
-		<h2>Headers:</h2>
 		<div style="white-space: nowrap;">
-		    <button id="test" class="tab">Headers</button><button id="test" class="tab tab-inactive">Body</button>
-		    <ul id="headerslist">
-		    </ul>
+		    <button class="tab" id="displayheaders">Headers</button><button class="tab tab-inactive" id="displaybody">Body</button>
+			<div id="tabview">
+				<ul id="headerslist"></ul>
+				<textarea id="requestbody"></textarea>
+			</div>
 		</div>
 		<button id="addheader">Add</button>
 	    </div>

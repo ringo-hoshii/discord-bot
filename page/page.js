@@ -9,10 +9,16 @@
 
 
 const token = "Bot MTEwNDY4NDUwNzIyNDg3OTIxNQ.GI7eqD.7erfzzHScGaQ3FuXUcYFp8tDGA93GwrQxMbeBk"
+let tabbuttonsrelations = {
+    "displayheaders": "headerslist",
+    "displaybody": "requestbody",
+}
+
 let headerslist
 let testheadername
 let saveddata = JSON.parse(localStorage.getItem("headersvalues"))
 let rows
+let tabview
 
 function loadheaders() {
     headerslist = document.getElementById("headerslist")
@@ -46,22 +52,78 @@ function body_onload() {
     }
 
     loadheaders()
+
+    tabview = document.getElementById("tabview")
+    let buttons = tabview.parentElement.getElementsByTagName("button")
+    let length = buttons.length
+    let i = 0
+    while (i < length) {
+        buttons[i].onclick = changetab
+        i++
+    }
+
+
+    changetab()
+}
+
+function changetab(object) {
+    if (object) {
+        object = object.target
+    } else {
+        object = document.getElementById("displayheaders")
+    }
+
+    let buttons = object.parentElement.getElementsByClassName("tab")
+    let i = 0
+    while (i < buttons.length) {
+        let classlist = buttons[i].classList
+        if (!classlist.contains("tab-inactive")) {
+            classlist.add("tab-inactive")
+        }
+
+        i++
+    }
+
+    object.classList.remove("tab-inactive")
+
+    i = 0
+    let tabs = tabview.children
+
+    while (i < tabs.length) {
+        if (tabs[i].id !== tabbuttonsrelations[object.id]) {
+            tabs[i].classList.add("tabcontent-inactive")
+        } else {
+            tabs[i].classList.remove("tabcontent-inactive")
+        }
+        i++
+    }
+    
+    tabbuttonsrelations[object.id]
 }
 
 function send() {
     let url = get_request_url()
     let method = get_selected_method()
     let headers = get_headers()
+    let body
 
-    let request = new Request(url, {
-	method: method,
-	headers: headers,
-    })
+    if (method !== "GET") {
+        body = document.getElementById("requestbody").value
+    }
+
+    let options = {
+        method: method,
+        headers: headers,
+    }
+
+    console.log(options)
 
     let response
-    fetch(request).then(res => {
-	response = res
+    fetch(url, options).then(res => {
+        response = res
+        console.log(response)
     })
+
 }
 
 function get_request_url() {

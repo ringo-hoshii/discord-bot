@@ -1,0 +1,1 @@
+1. migrate the page to node js because i can't send CORS requests without hosting apparently (Origin: none)

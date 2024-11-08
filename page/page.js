@@ -14,6 +14,7 @@ let tabbuttonsrelations = {
     "displaybody": "requestbody",
 }
 
+
 let headerslist
 let testheadername
 let saveddata = JSON.parse(localStorage.getItem("headersvalues"))
@@ -64,6 +65,8 @@ function body_onload() {
 
 
     changetab()
+
+    send()
 }
 
 function changetab(object) {
@@ -101,6 +104,10 @@ function changetab(object) {
     tabbuttonsrelations[object.id]
 }
 
+function sendbtn_onclick() {
+    send()
+}
+
 function send() {
     let url = get_request_url()
     let method = get_selected_method()
@@ -112,11 +119,9 @@ function send() {
     }
 
     let options = {
-        method: method,
+        // method: method,
         headers: headers,
     }
-
-    console.log(options)
 
     let response
     fetch(url, options).then(res => {
@@ -159,6 +164,17 @@ function get_headers() {
     if (headers.length === 0) {
 	return null
     }
+
+    i = 0
+    let temp_updated_headers = {}
+    for (i in headers) {
+        for (j in Object.keys(headers[i])) {
+           temp_updated_headers[Object.keys(headers[i])[j]] = Object.values(headers[i])[j]
+        }
+    }
+    
+    headers = temp_updated_headers
+
     return headers
 }
 

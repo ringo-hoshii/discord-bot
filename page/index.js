@@ -1,8 +1,8 @@
-const http = require("http") 
+const https = require("https") 
 const fs = require("fs")
 const util = require("util")
 
-let port = 80
+let port = 443
 
 let filename = "incomingrequests.txt"
 let incomingreqstream = fs.createWriteStream(filename, { flags: "a" })
@@ -28,4 +28,4 @@ function requesthandler(req, res) {
     incomingreqstream.write(util.inspect(req))
 }
 
-http.createServer(requesthandler).listen(port)
+https.createServer(requesthandler).listen(port)

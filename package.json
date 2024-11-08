@@ -2,5 +2,32 @@
   "dependencies": {
     "node-notifier": "^10.0.1",
     "ws": "^8.18.0"
-  }
+  },
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "Discord bot from scratch (WebSocket and HTTP API interaction)",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ringo-hoshii/discord_bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "websocket",
+    "socket",
+    "http",
+    "api",
+    "request",
+    "requests"
+  ],
+  "author": "wantapples",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ringo-hoshii/discord_bot/issues"
+  },
+  "homepage": "https://github.com/ringo-hoshii/discord_bot#readme"
 }

@@ -1,1 +1,2 @@
 1. migrate the page to node js because i can't send CORS requests without hosting apparently (Origin: none)
+2. dig deeper towards SSL certificates (and general working principle of HTTPS because it's very unclear from the videos i've seen about the topic)

@@ -21,6 +21,52 @@ let saveddata = JSON.parse(localStorage.getItem("headersvalues"))
 let rows
 let tabview
 
+// fuck it's actually so bugging me rn
+// this new "jj" and <leader>a moves
+// im so confused when i don't complete jj and can't even undo it properly now because it's gonna
+// undo the entire change
+//
+// EDIT: i actually can because it counts as a new insertion??
+//
+// EDIT 2: not it doesn't?
+//
+// like just now
+// im gonna type something and quitju
+// yeah u see it can't be undone if you.. or not?
+// quit againj
+// 
+// no you just need to actually clean all this mess
+//
+// or i can remap it to enter insert mode again
+// because right not it is mapped just to <Esc>
+// but...
+// if i...
+// wait a minute
+// it's not that easy
+// wait wtf
+// and i don't wanna use caps lock..
+// so fucking confusing dude
+
+
+function new_function(arg1, arg2) {
+    let size = 10
+    while (size < 10) {
+	console.log(size)
+	size++
+    }
+    // let's actually test it again
+
+    // no it is fucking confusing af
+
+    // maybe it'll go off with practice?..
+    // so
+
+    if (somekindofcondition) {
+	dosomething(arguments, morearguments) // wow that's a keyword?
+
+    }
+}
+
 function loadheaders() {
     headerslist = document.getElementById("headerslist")
     rows = headerslist.children

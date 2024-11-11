@@ -1,4 +1,14 @@
 # Todo
+- obtain an HTTPS certificate
+
+
+
+
+
+
+
+
+# Escape parentheses easier (problem)
 
 jesus i need to figure out a way to write my own vim plugins (commands specifically)
 

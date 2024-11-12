@@ -112,4 +112,22 @@ you need to just "know" by heart
 what i'm trying to say is that even if you blind type perfectly it's still easier to
 see the keys subconsciously
 
+## Keyboard too bulky
+
+i actually can see and feel the size of this keyboard so much
+it's so much bigger in comparison to the laptop one
+
+especially the numpad
+even though it's really useful
+like, REALLY useful
+at least after i started using it lol
+at least i have to move my hands less when i'm typing my password in
+
+so um... yeah. the size
+even though a lot of people tend to not include it on their keyboards,
+now i see that it's just too far away from the main part of the keyboard
+(in comparison to the laptop as well)
+
+
+
 

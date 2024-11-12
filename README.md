@@ -68,3 +68,48 @@ i don't fucking like it at all.. it feels so weird
 
 so i need one shortcut to jump outside of the brackets 
 
+
+
+# Vim with mechanical keyboard
+
+i was just wondering... since i chose Vim because of an akward position of some keys
+that are actually more accesible on my mechanical keyboard. would typing on it
+again be better WITH vim motions rather than without it?
+
+like genuinely, i was always saying that i started using vim only because of god damn
+flat small laptop keyboard keys and that's true
+
+but now that i'm back on my Hator Starfall will it still be better?
+
+i actually think that the only way to found out is to not use it, right?
+
+and i can already feel how many keys i am misclicking
+
+like that's the reality of red switches
+
+but actually you know what? it does feel a bit more satisfying than a laptop keyboard even
+though it's red switches
+
+## Dreaded by Home/End keys just by looking at them
+
+GOD DAMN IT I'M NOT ONLY MISCLICKING, THIS SHIT JUST... it's like.. "doubling"
+the keys that i'm pressing sometimes
+
+so anyway. yeah. the Home and End keys
+
+no.
+
+just plain no.
+
+i will never be able to get off Vim again...
+i am now the hostage of my own choice
+and i'm saying it in a more (typed ee with one key press again) humorous way
+i'm actually grateful for my choice
+
+and by the way the key highlighting is so much better than just solid keys that
+you need to just "know" by heart
+
+what i'm trying to say is that even if you blind type perfectly it's still easier to
+see the keys subconsciously
+
+

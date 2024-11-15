@@ -26019,3 +26019,2708 @@ Auto Role is running on Gateway version 6 and available in guilds:[
     guild_id: '1104583934886563943'
   }
 }
+
+
+
+
+
+
+
+
+[RENEWED THE LOGGING ON THE NEW SYSTEM]
+
+
+[Thu, 14/11/2024, 17:40:16.124]
+Connection opened
+
+
+[Thu, 14/11/2024, 17:40:16.208]
+{
+  t: null,
+  s: null,
+  op: 10,
+  d: {
+    heartbeat_interval: 41250,
+    _trace: [ '["gateway-prd-us-east1-c-rj8m",{"micros":0.0}]' ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:40:16.213]
+Server hello
+
+
+[Thu, 14/11/2024, 17:40:16.216]
+Identify message sent with intents: 33537
+
+
+[Thu, 14/11/2024, 17:40:16.535]
+{
+  t: 'READY',
+  s: 1,
+  op: 0,
+  d: {
+    v: 6,
+    user_settings: {},
+    user: {
+      verified: true,
+      username: 'Orion',
+      mfa_enabled: false,
+      id: '1104684507224879215',
+      global_name: null,
+      flags: 0,
+      email: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    session_type: 'normal',
+    session_id: '7dff80b631e11d3d3c9f95576a265999',
+    resume_gateway_url: 'wss://gateway-us-east1-c.discord.gg',
+    relationships: [],
+    private_channels: [],
+    presences: [],
+    guilds: [ [Object], [Object] ],
+    guild_join_requests: [],
+    geo_ordered_rtc_regions: [ 'bucharest', 'russia', 'warsaw', 'finland', 'stockholm' ],
+    auth: {},
+    application: { id: '1104684507224879215', flags: 8953856 },
+    _trace: [
+      '["gateway-prd-us-east1-c-rj8m",{"micros":144260,"calls":["id_created",{"micros":724,"calls":[]},"session_lookup_time",{"micros":335,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-1-260",{"micros":141964,"calls":["start_session",{"micros":61726,"calls":["discord-api-rpc-6c579d6f7d-zsglw",{"micros":56963,"calls":["get_user",{"micros":6329},"get_guilds",{"micros":12639},"send_scheduled_deletion_message",{"micros":8},"guild_join_requests",{"micros":2325},"authorized_ip_coro",{"micros":10}]}]},"starting_guild_connect",{"micros":59,"calls":[]},"presence_started",{"micros":28397,"calls":[]},"guilds_started",{"micros":126,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":51624,"calls":[]},"connect_finished",{"micros":51631,"calls":[]},"build_ready",{"micros":21,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]'
+    ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:40:16.540]
+Server is ready
+Version: 6
+Username: Orion
+Id: 1104684507224879215
+
+
+[Thu, 14/11/2024, 17:40:16.542]
+{
+  t: 'GUILD_CREATE',
+  s: 2,
+  op: 0,
+  d: {
+    preferred_locale: 'en-US',
+    verification_level: 0,
+    rules_channel_id: null,
+    channels: [ [Object], [Object], [Object], [Object], [Object] ],
+    stage_instances: [],
+    soundboard_sounds: [],
+    activity_instances: [],
+    safety_alerts_channel_id: null,
+    latest_onboarding_question_id: null,
+    premium_progress_bar_enabled: false,
+    icon: null,
+    features: [],
+    lazy: true,
+    max_stage_video_channel_users: 50,
+    emojis: [],
+    id: '1195982019969159199',
+    roles: [ [Object], [Object], [Object] ],
+    presences: [ [Object], [Object] ],
+    afk_channel_id: null,
+    voice_states: [],
+    premium_tier: 0,
+    large: false,
+    system_channel_id: '1195982020405379105',
+    home_header: null,
+    name: '123',
+    member_count: 3,
+    application_command_counts: {},
+    mfa_level: 0,
+    discovery_splash: null,
+    incidents_data: null,
+    vanity_url_code: null,
+    threads: [],
+    banner: null,
+    unavailable: false,
+    description: null,
+    default_message_notifications: 0,
+    nsfw: false,
+    region: 'deprecated',
+    premium_subscription_count: 0,
+    stickers: [],
+    application_id: null,
+    hub_type: null,
+    joined_at: '2024-10-10T21:53:45.883000+00:00',
+    splash: null,
+    explicit_content_filter: 0,
+    owner_id: '633325625029034033',
+    system_channel_flags: 0,
+    members: [ [Object], [Object], [Object] ],
+    afk_timeout: 300,
+    embedded_activities: [],
+    max_members: 500000,
+    guild_scheduled_events: [],
+    version: 1729354193795,
+    inventory_settings: null,
+    clan: null,
+    max_video_channel_users: 25,
+    nsfw_level: 0,
+    public_updates_channel_id: null
+  }
+}
+
+
+[Thu, 14/11/2024, 17:40:16.641]
+{
+  t: 'GUILD_CREATE',
+  s: 3,
+  op: 0,
+  d: {
+    preferred_locale: 'en-US',
+    verification_level: 0,
+    rules_channel_id: null,
+    channels: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object]
+    ],
+    stage_instances: [],
+    soundboard_sounds: [],
+    activity_instances: [],
+    safety_alerts_channel_id: null,
+    latest_onboarding_question_id: null,
+    premium_progress_bar_enabled: false,
+    icon: '4f679077461676d7275160b440350f43',
+    features: [ 'SOUNDBOARD', 'GUESTS_ENABLED' ],
+    lazy: true,
+    max_stage_video_channel_users: 50,
+    emojis: [],
+    id: '1104583934886563943',
+    roles: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    presences: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    afk_channel_id: null,
+    voice_states: [],
+    premium_tier: 0,
+    large: false,
+    system_channel_id: '1297661319310475307',
+    home_header: null,
+    name: 'Pure Gamma',
+    member_count: 11,
+    application_command_counts: {},
+    mfa_level: 0,
+    discovery_splash: null,
+    incidents_data: null,
+    vanity_url_code: null,
+    threads: [],
+    banner: null,
+    unavailable: false,
+    description: null,
+    default_message_notifications: 1,
+    nsfw: false,
+    region: 'deprecated',
+    premium_subscription_count: 0,
+    stickers: [],
+    application_id: null,
+    hub_type: null,
+    joined_at: '2023-05-07T08:25:17.823000+00:00',
+    splash: null,
+    explicit_content_filter: 0,
+    owner_id: '633325625029034033',
+    system_channel_flags: 0,
+    members: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    afk_timeout: 300,
+    embedded_activities: [],
+    max_members: 500000,
+    guild_scheduled_events: [],
+    version: 1729458534403,
+    inventory_settings: null,
+    clan: null,
+    max_video_channel_users: 25,
+    nsfw_level: 0,
+    public_updates_channel_id: null
+  }
+}
+
+
+[Thu, 14/11/2024, 17:42:24.871]
+Connection opened
+
+
+[Thu, 14/11/2024, 17:42:24.909]
+{
+  t: null,
+  s: null,
+  op: 10,
+  d: {
+    heartbeat_interval: 41250,
+    _trace: [ '["gateway-prd-us-east1-c-s1dk",{"micros":0.0}]' ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:42:24.913]
+Server hello
+
+
+[Thu, 14/11/2024, 17:42:24.915]
+Identify message sent with intents: 33537
+
+
+[Thu, 14/11/2024, 17:42:25.191]
+{
+  t: 'READY',
+  s: 1,
+  op: 0,
+  d: {
+    v: 6,
+    user_settings: {},
+    user: {
+      verified: true,
+      username: 'Orion',
+      mfa_enabled: false,
+      id: '1104684507224879215',
+      global_name: null,
+      flags: 0,
+      email: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    session_type: 'normal',
+    session_id: 'fcfd17c9afe1f21649fab6d3631bdd83',
+    resume_gateway_url: 'wss://gateway-us-east1-c.discord.gg',
+    relationships: [],
+    private_channels: [],
+    presences: [],
+    guilds: [ [Object], [Object] ],
+    guild_join_requests: [],
+    geo_ordered_rtc_regions: [ 'bucharest', 'russia', 'warsaw', 'finland', 'stockholm' ],
+    auth: {},
+    application: { id: '1104684507224879215', flags: 8953856 },
+    _trace: [
+      '["gateway-prd-us-east1-c-s1dk",{"micros":106416,"calls":["id_created",{"micros":671,"calls":[]},"session_lookup_time",{"micros":1180,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"discord-sessions-prd-1-140",{"micros":103338,"calls":["start_session",{"micros":32509,"calls":["discord-api-rpc-6c579d6f7d-r6n2q",{"micros":29025,"calls":["get_user",{"micros":4583},"get_guilds",{"micros":2710},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":0},"authorized_ip_coro",{"micros":7}]}]},"starting_guild_connect",{"micros":37,"calls":[]},"presence_started",{"micros":18985,"calls":[]},"guilds_started",{"micros":141,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":51622,"calls":[]},"connect_finished",{"micros":51634,"calls":[]},"build_ready",{"micros":27,"calls":[]},"clean_ready",{"micros":3,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]'
+    ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:42:25.196]
+Server is ready
+Version: 6
+Username: Orion
+Id: 1104684507224879215
+
+
+[Thu, 14/11/2024, 17:42:25.197]
+{
+  t: 'GUILD_CREATE',
+  s: 2,
+  op: 0,
+  d: {
+    safety_alerts_channel_id: null,
+    preferred_locale: 'en-US',
+    region: 'deprecated',
+    soundboard_sounds: [],
+    presences: [ [Object], [Object] ],
+    discovery_splash: null,
+    icon: null,
+    afk_timeout: 300,
+    embedded_activities: [],
+    afk_channel_id: null,
+    nsfw: false,
+    nsfw_level: 0,
+    owner_id: '633325625029034033',
+    stage_instances: [],
+    latest_onboarding_question_id: null,
+    id: '1195982019969159199',
+    vanity_url_code: null,
+    splash: null,
+    max_stage_video_channel_users: 50,
+    premium_subscription_count: 0,
+    mfa_level: 0,
+    joined_at: '2024-10-10T21:53:45.883000+00:00',
+    hub_type: null,
+    activity_instances: [],
+    name: '123',
+    voice_states: [],
+    channels: [ [Object], [Object], [Object], [Object], [Object] ],
+    emojis: [],
+    guild_scheduled_events: [],
+    public_updates_channel_id: null,
+    home_header: null,
+    explicit_content_filter: 0,
+    threads: [],
+    stickers: [],
+    members: [ [Object], [Object], [Object] ],
+    description: null,
+    application_command_counts: {},
+    clan: null,
+    large: false,
+    application_id: null,
+    unavailable: false,
+    incidents_data: null,
+    roles: [ [Object], [Object], [Object] ],
+    rules_channel_id: null,
+    verification_level: 0,
+    default_message_notifications: 0,
+    system_channel_id: '1195982020405379105',
+    features: [],
+    premium_tier: 0,
+    banner: null,
+    max_members: 500000,
+    lazy: true,
+    version: 1729354193795,
+    max_video_channel_users: 25,
+    system_channel_flags: 0,
+    inventory_settings: null,
+    member_count: 3,
+    premium_progress_bar_enabled: false
+  }
+}
+
+
+[Thu, 14/11/2024, 17:42:25.204]
+{
+  t: 'GUILD_CREATE',
+  s: 3,
+  op: 0,
+  d: {
+    safety_alerts_channel_id: null,
+    preferred_locale: 'en-US',
+    region: 'deprecated',
+    soundboard_sounds: [],
+    presences: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    discovery_splash: null,
+    icon: '4f679077461676d7275160b440350f43',
+    afk_timeout: 300,
+    embedded_activities: [],
+    afk_channel_id: null,
+    nsfw: false,
+    nsfw_level: 0,
+    owner_id: '633325625029034033',
+    stage_instances: [],
+    latest_onboarding_question_id: null,
+    id: '1104583934886563943',
+    vanity_url_code: null,
+    splash: null,
+    max_stage_video_channel_users: 50,
+    premium_subscription_count: 0,
+    mfa_level: 0,
+    joined_at: '2023-05-07T08:25:17.823000+00:00',
+    hub_type: null,
+    activity_instances: [],
+    name: 'Pure Gamma',
+    voice_states: [],
+    channels: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object]
+    ],
+    emojis: [],
+    guild_scheduled_events: [],
+    public_updates_channel_id: null,
+    home_header: null,
+    explicit_content_filter: 0,
+    threads: [],
+    stickers: [],
+    members: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    description: null,
+    application_command_counts: {},
+    clan: null,
+    large: false,
+    application_id: null,
+    unavailable: false,
+    incidents_data: null,
+    roles: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    rules_channel_id: null,
+    verification_level: 0,
+    default_message_notifications: 1,
+    system_channel_id: '1297661319310475307',
+    features: [ 'SOUNDBOARD', 'GUESTS_ENABLED' ],
+    premium_tier: 0,
+    banner: null,
+    max_members: 500000,
+    lazy: true,
+    version: 1729458534403,
+    max_video_channel_users: 25,
+    system_channel_flags: 0,
+    inventory_settings: null,
+    member_count: 11,
+    premium_progress_bar_enabled: false
+  }
+}
+
+
+[Thu, 14/11/2024, 17:42:55.915]
+Connection opened
+
+
+[Thu, 14/11/2024, 17:42:55.953]
+{
+  t: null,
+  s: null,
+  op: 10,
+  d: {
+    heartbeat_interval: 41250,
+    _trace: [ '["gateway-prd-us-east1-c-kt0c",{"micros":0.0}]' ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:42:55.958]
+Server hello
+
+
+[Thu, 14/11/2024, 17:42:55.961]
+Identify message sent with intents: 33537
+
+
+[Thu, 14/11/2024, 17:42:56.178]
+{
+  t: 'READY',
+  s: 1,
+  op: 0,
+  d: {
+    v: 6,
+    user_settings: {},
+    user: {
+      verified: true,
+      username: 'Orion',
+      mfa_enabled: false,
+      id: '1104684507224879215',
+      global_name: null,
+      flags: 0,
+      email: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    session_type: 'normal',
+    session_id: 'f27af1731d85e56291ecebffe71f2f2f',
+    resume_gateway_url: 'wss://gateway-us-east1-c.discord.gg',
+    relationships: [],
+    private_channels: [],
+    presences: [],
+    guilds: [ [Object], [Object] ],
+    guild_join_requests: [],
+    geo_ordered_rtc_regions: [ 'bucharest', 'russia', 'warsaw', 'finland', 'stockholm' ],
+    auth: {},
+    application: { id: '1104684507224879215', flags: 8953856 },
+    _trace: [
+      '["gateway-prd-us-east1-c-kt0c",{"micros":49724,"calls":["id_created",{"micros":817,"calls":[]},"session_lookup_time",{"micros":8219,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"discord-sessions-prd-1-275",{"micros":40354,"calls":["start_session",{"micros":33147,"calls":["discord-api-rpc-6c579d6f7d-nl9wz",{"micros":30173,"calls":["get_user",{"micros":4027},"get_guilds",{"micros":2461},"send_scheduled_deletion_message",{"micros":5},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":6}]}]},"starting_guild_connect",{"micros":33,"calls":[]},"presence_started",{"micros":327,"calls":[]},"guilds_started",{"micros":116,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":6706,"calls":[]},"connect_finished",{"micros":6712,"calls":[]},"build_ready",{"micros":16,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}]'
+    ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:42:56.183]
+Server is ready
+Version: 6
+Username: Orion
+Id: 1104684507224879215
+
+
+[Thu, 14/11/2024, 17:42:56.193]
+{
+  t: 'GUILD_CREATE',
+  s: 2,
+  op: 0,
+  d: {
+    activity_instances: [],
+    explicit_content_filter: 0,
+    afk_timeout: 300,
+    lazy: true,
+    system_channel_id: '1297661319310475307',
+    hub_type: null,
+    id: '1104583934886563943',
+    features: [ 'SOUNDBOARD', 'GUESTS_ENABLED' ],
+    channels: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object]
+    ],
+    safety_alerts_channel_id: null,
+    icon: '4f679077461676d7275160b440350f43',
+    name: 'Pure Gamma',
+    presences: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    max_stage_video_channel_users: 50,
+    clan: null,
+    incidents_data: null,
+    mfa_level: 0,
+    premium_progress_bar_enabled: false,
+    application_command_counts: {},
+    max_video_channel_users: 25,
+    threads: [],
+    premium_tier: 0,
+    stickers: [],
+    guild_scheduled_events: [],
+    description: null,
+    system_channel_flags: 0,
+    latest_onboarding_question_id: null,
+    application_id: null,
+    home_header: null,
+    default_message_notifications: 1,
+    voice_states: [],
+    inventory_settings: null,
+    banner: null,
+    verification_level: 0,
+    large: false,
+    preferred_locale: 'en-US',
+    embedded_activities: [],
+    emojis: [],
+    owner_id: '633325625029034033',
+    nsfw_level: 0,
+    member_count: 11,
+    vanity_url_code: null,
+    region: 'deprecated',
+    discovery_splash: null,
+    max_members: 500000,
+    stage_instances: [],
+    splash: null,
+    roles: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    unavailable: false,
+    rules_channel_id: null,
+    nsfw: false,
+    members: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    soundboard_sounds: [],
+    version: 1729458534403,
+    joined_at: '2023-05-07T08:25:17.823000+00:00',
+    premium_subscription_count: 0,
+    public_updates_channel_id: null,
+    afk_channel_id: null
+  }
+}
+
+
+[Thu, 14/11/2024, 17:42:56.207]
+{
+  t: 'GUILD_CREATE',
+  s: 3,
+  op: 0,
+  d: {
+    activity_instances: [],
+    explicit_content_filter: 0,
+    afk_timeout: 300,
+    lazy: true,
+    system_channel_id: '1195982020405379105',
+    hub_type: null,
+    id: '1195982019969159199',
+    features: [],
+    channels: [ [Object], [Object], [Object], [Object], [Object] ],
+    safety_alerts_channel_id: null,
+    icon: null,
+    name: '123',
+    presences: [ [Object], [Object] ],
+    max_stage_video_channel_users: 50,
+    clan: null,
+    incidents_data: null,
+    mfa_level: 0,
+    premium_progress_bar_enabled: false,
+    application_command_counts: {},
+    max_video_channel_users: 25,
+    threads: [],
+    premium_tier: 0,
+    stickers: [],
+    guild_scheduled_events: [],
+    description: null,
+    system_channel_flags: 0,
+    latest_onboarding_question_id: null,
+    application_id: null,
+    home_header: null,
+    default_message_notifications: 0,
+    voice_states: [],
+    inventory_settings: null,
+    banner: null,
+    verification_level: 0,
+    large: false,
+    preferred_locale: 'en-US',
+    embedded_activities: [],
+    emojis: [],
+    owner_id: '633325625029034033',
+    nsfw_level: 0,
+    member_count: 3,
+    vanity_url_code: null,
+    region: 'deprecated',
+    discovery_splash: null,
+    max_members: 500000,
+    stage_instances: [],
+    splash: null,
+    roles: [ [Object], [Object], [Object] ],
+    unavailable: false,
+    rules_channel_id: null,
+    nsfw: false,
+    members: [ [Object], [Object], [Object] ],
+    soundboard_sounds: [],
+    version: 1729354193795,
+    joined_at: '2024-10-10T21:53:45.883000+00:00',
+    premium_subscription_count: 0,
+    public_updates_channel_id: null,
+    afk_channel_id: null
+  }
+}
+
+
+[Thu, 14/11/2024, 17:43:04.534]
+Connection opened
+
+
+[Thu, 14/11/2024, 17:43:04.572]
+{
+  t: null,
+  s: null,
+  op: 10,
+  d: {
+    heartbeat_interval: 41250,
+    _trace: [ '["gateway-prd-us-east1-b-zrjz",{"micros":0.0}]' ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:43:04.576]
+Server hello
+
+
+[Thu, 14/11/2024, 17:43:04.579]
+Identify message sent with intents: 33537
+
+
+[Thu, 14/11/2024, 17:43:04.833]
+{
+  t: 'READY',
+  s: 1,
+  op: 0,
+  d: {
+    v: 6,
+    user_settings: {},
+    user: {
+      verified: true,
+      username: 'Orion',
+      mfa_enabled: false,
+      id: '1104684507224879215',
+      global_name: null,
+      flags: 0,
+      email: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    session_type: 'normal',
+    session_id: 'd8f7c750c3e620f147cadfbaccca50d9',
+    resume_gateway_url: 'wss://gateway-us-east1-b.discord.gg',
+    relationships: [],
+    private_channels: [],
+    presences: [],
+    guilds: [ [Object], [Object] ],
+    guild_join_requests: [],
+    geo_ordered_rtc_regions: [ 'bucharest', 'russia', 'warsaw', 'finland', 'stockholm' ],
+    auth: {},
+    application: { id: '1104684507224879215', flags: 8953856 },
+    _trace: [
+      '["gateway-prd-us-east1-b-zrjz",{"micros":69139,"calls":["id_created",{"micros":1000,"calls":[]},"session_lookup_time",{"micros":451,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-1-85",{"micros":67268,"calls":["start_session",{"micros":47032,"calls":["discord-api-rpc-6c579d6f7d-6n6w5",{"micros":42737,"calls":["get_user",{"micros":5606},"get_guilds",{"micros":3585},"send_scheduled_deletion_message",{"micros":7},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":10}]}]},"starting_guild_connect",{"micros":39,"calls":[]},"presence_started",{"micros":19590,"calls":[]},"guilds_started",{"micros":117,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":460,"calls":[]},"connect_finished",{"micros":466,"calls":[]},"build_ready",{"micros":21,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]'
+    ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:43:04.838]
+Server is ready
+Version: 6
+Username: Orion
+Id: 1104684507224879215
+
+
+[Thu, 14/11/2024, 17:43:04.842]
+{
+  t: 'GUILD_CREATE',
+  s: 2,
+  op: 0,
+  d: {
+    member_count: 11,
+    application_id: null,
+    emojis: [],
+    roles: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    discovery_splash: null,
+    latest_onboarding_question_id: null,
+    home_header: null,
+    region: 'deprecated',
+    application_command_counts: {},
+    clan: null,
+    presences: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    nsfw: false,
+    system_channel_flags: 0,
+    unavailable: false,
+    id: '1104583934886563943',
+    max_stage_video_channel_users: 50,
+    soundboard_sounds: [],
+    stickers: [],
+    afk_timeout: 300,
+    name: 'Pure Gamma',
+    lazy: true,
+    nsfw_level: 0,
+    voice_states: [],
+    threads: [],
+    max_members: 500000,
+    inventory_settings: null,
+    safety_alerts_channel_id: null,
+    rules_channel_id: null,
+    system_channel_id: '1297661319310475307',
+    premium_subscription_count: 0,
+    owner_id: '633325625029034033',
+    description: null,
+    premium_tier: 0,
+    joined_at: '2023-05-07T08:25:17.823000+00:00',
+    preferred_locale: 'en-US',
+    vanity_url_code: null,
+    activity_instances: [],
+    hub_type: null,
+    banner: null,
+    mfa_level: 0,
+    splash: null,
+    channels: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object]
+    ],
+    stage_instances: [],
+    explicit_content_filter: 0,
+    large: false,
+    verification_level: 0,
+    incidents_data: null,
+    max_video_channel_users: 25,
+    members: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    embedded_activities: [],
+    guild_scheduled_events: [],
+    public_updates_channel_id: null,
+    default_message_notifications: 1,
+    premium_progress_bar_enabled: false,
+    features: [ 'SOUNDBOARD', 'GUESTS_ENABLED' ],
+    version: 1729458534403,
+    afk_channel_id: null,
+    icon: '4f679077461676d7275160b440350f43'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:43:04.851]
+{
+  t: 'GUILD_CREATE',
+  s: 3,
+  op: 0,
+  d: {
+    member_count: 3,
+    application_id: null,
+    emojis: [],
+    roles: [ [Object], [Object], [Object] ],
+    discovery_splash: null,
+    latest_onboarding_question_id: null,
+    home_header: null,
+    region: 'deprecated',
+    application_command_counts: {},
+    clan: null,
+    presences: [ [Object], [Object] ],
+    nsfw: false,
+    system_channel_flags: 0,
+    unavailable: false,
+    id: '1195982019969159199',
+    max_stage_video_channel_users: 50,
+    soundboard_sounds: [],
+    stickers: [],
+    afk_timeout: 300,
+    name: '123',
+    lazy: true,
+    nsfw_level: 0,
+    voice_states: [],
+    threads: [],
+    max_members: 500000,
+    inventory_settings: null,
+    safety_alerts_channel_id: null,
+    rules_channel_id: null,
+    system_channel_id: '1195982020405379105',
+    premium_subscription_count: 0,
+    owner_id: '633325625029034033',
+    description: null,
+    premium_tier: 0,
+    joined_at: '2024-10-10T21:53:45.883000+00:00',
+    preferred_locale: 'en-US',
+    vanity_url_code: null,
+    activity_instances: [],
+    hub_type: null,
+    banner: null,
+    mfa_level: 0,
+    splash: null,
+    channels: [ [Object], [Object], [Object], [Object], [Object] ],
+    stage_instances: [],
+    explicit_content_filter: 0,
+    large: false,
+    verification_level: 0,
+    incidents_data: null,
+    max_video_channel_users: 25,
+    members: [ [Object], [Object], [Object] ],
+    embedded_activities: [],
+    guild_scheduled_events: [],
+    public_updates_channel_id: null,
+    default_message_notifications: 0,
+    premium_progress_bar_enabled: false,
+    features: [],
+    version: 1729354193795,
+    afk_channel_id: null,
+    icon: null
+  }
+}
+
+
+[Thu, 14/11/2024, 17:45:55.344]
+Connection opened
+
+
+[Thu, 14/11/2024, 17:45:55.381]
+{
+  t: null,
+  s: null,
+  op: 10,
+  d: {
+    heartbeat_interval: 41250,
+    _trace: [ '["gateway-prd-us-east1-c-chdm",{"micros":0.0}]' ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:45:55.385]
+Server hello
+
+
+[Thu, 14/11/2024, 17:45:55.387]
+Identify message sent with intents: 33537
+
+
+[Thu, 14/11/2024, 17:45:55.609]
+{
+  t: 'READY',
+  s: 1,
+  op: 0,
+  d: {
+    v: 6,
+    user_settings: {},
+    user: {
+      verified: true,
+      username: 'Orion',
+      mfa_enabled: false,
+      id: '1104684507224879215',
+      global_name: null,
+      flags: 0,
+      email: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    session_type: 'normal',
+    session_id: '4b1abef71121f1363f83e6f1b83cd2bc',
+    resume_gateway_url: 'wss://gateway-us-east1-c.discord.gg',
+    relationships: [],
+    private_channels: [],
+    presences: [],
+    guilds: [ [Object], [Object] ],
+    guild_join_requests: [],
+    geo_ordered_rtc_regions: [ 'bucharest', 'russia', 'warsaw', 'finland', 'stockholm' ],
+    auth: {},
+    application: { id: '1104684507224879215', flags: 8953856 },
+    _trace: [
+      '["gateway-prd-us-east1-c-chdm",{"micros":62764,"calls":["id_created",{"micros":743,"calls":[]},"session_lookup_time",{"micros":2887,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-1-32",{"micros":57741,"calls":["start_session",{"micros":44379,"calls":["discord-api-rpc-6c579d6f7d-d4tmh",{"micros":39427,"calls":["get_user",{"micros":5372},"get_guilds",{"micros":4407},"send_scheduled_deletion_message",{"micros":6},"guild_join_requests",{"micros":202},"authorized_ip_coro",{"micros":9}]}]},"starting_guild_connect",{"micros":43,"calls":[]},"presence_started",{"micros":10453,"calls":[]},"guilds_started",{"micros":119,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":2716,"calls":[]},"connect_finished",{"micros":2721,"calls":[]},"build_ready",{"micros":24,"calls":[]},"clean_ready",{"micros":0,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}]'
+    ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:45:55.614]
+Server is ready
+Version: 6
+Username: Orion
+Id: 1104684507224879215
+
+
+[Thu, 14/11/2024, 17:45:55.617]
+{
+  t: 'GUILD_CREATE',
+  s: 2,
+  op: 0,
+  d: {
+    premium_progress_bar_enabled: false,
+    home_header: null,
+    member_count: 3,
+    members: [ [Object], [Object], [Object] ],
+    max_video_channel_users: 25,
+    nsfw_level: 0,
+    icon: null,
+    vanity_url_code: null,
+    id: '1195982019969159199',
+    inventory_settings: null,
+    discovery_splash: null,
+    safety_alerts_channel_id: null,
+    system_channel_id: '1195982020405379105',
+    features: [],
+    roles: [ [Object], [Object], [Object] ],
+    verification_level: 0,
+    name: '123',
+    mfa_level: 0,
+    premium_tier: 0,
+    afk_channel_id: null,
+    emojis: [],
+    premium_subscription_count: 0,
+    lazy: true,
+    afk_timeout: 300,
+    unavailable: false,
+    threads: [],
+    clan: null,
+    joined_at: '2024-10-10T21:53:45.883000+00:00',
+    region: 'deprecated',
+    soundboard_sounds: [],
+    description: null,
+    max_stage_video_channel_users: 50,
+    large: false,
+    embedded_activities: [],
+    stage_instances: [],
+    owner_id: '633325625029034033',
+    preferred_locale: 'en-US',
+    voice_states: [],
+    splash: null,
+    application_id: null,
+    hub_type: null,
+    latest_onboarding_question_id: null,
+    rules_channel_id: null,
+    system_channel_flags: 0,
+    banner: null,
+    max_members: 500000,
+    presences: [ [Object], [Object] ],
+    application_command_counts: {},
+    activity_instances: [],
+    channels: [ [Object], [Object], [Object], [Object], [Object] ],
+    guild_scheduled_events: [],
+    version: 1729354193795,
+    incidents_data: null,
+    public_updates_channel_id: null,
+    stickers: [],
+    explicit_content_filter: 0,
+    nsfw: false,
+    default_message_notifications: 0
+  }
+}
+
+
+[Thu, 14/11/2024, 17:45:55.641]
+{
+  t: 'GUILD_CREATE',
+  s: 3,
+  op: 0,
+  d: {
+    premium_progress_bar_enabled: false,
+    home_header: null,
+    member_count: 11,
+    members: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    max_video_channel_users: 25,
+    nsfw_level: 0,
+    icon: '4f679077461676d7275160b440350f43',
+    vanity_url_code: null,
+    id: '1104583934886563943',
+    inventory_settings: null,
+    discovery_splash: null,
+    safety_alerts_channel_id: null,
+    system_channel_id: '1297661319310475307',
+    features: [ 'SOUNDBOARD', 'GUESTS_ENABLED' ],
+    roles: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    verification_level: 0,
+    name: 'Pure Gamma',
+    mfa_level: 0,
+    premium_tier: 0,
+    afk_channel_id: null,
+    emojis: [],
+    premium_subscription_count: 0,
+    lazy: true,
+    afk_timeout: 300,
+    unavailable: false,
+    threads: [],
+    clan: null,
+    joined_at: '2023-05-07T08:25:17.823000+00:00',
+    region: 'deprecated',
+    soundboard_sounds: [],
+    description: null,
+    max_stage_video_channel_users: 50,
+    large: false,
+    embedded_activities: [],
+    stage_instances: [],
+    owner_id: '633325625029034033',
+    preferred_locale: 'en-US',
+    voice_states: [],
+    splash: null,
+    application_id: null,
+    hub_type: null,
+    latest_onboarding_question_id: null,
+    rules_channel_id: null,
+    system_channel_flags: 0,
+    banner: null,
+    max_members: 500000,
+    presences: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    application_command_counts: {},
+    activity_instances: [],
+    channels: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object]
+    ],
+    guild_scheduled_events: [],
+    version: 1729458534403,
+    incidents_data: null,
+    public_updates_channel_id: null,
+    stickers: [],
+    explicit_content_filter: 0,
+    nsfw: false,
+    default_message_notifications: 1
+  }
+}
+
+
+[Thu, 14/11/2024, 17:46:34.658]
+{
+  t: 'PRESENCE_UPDATE',
+  s: 4,
+  op: 0,
+  d: {
+    user: { id: '633325625029034033' },
+    status: 'online',
+    roles: [],
+    premium_since: null,
+    nick: null,
+    guild_id: '1195982019969159199',
+    game: {
+      type: 4,
+      state: 'terminally tired',
+      session_id: null,
+      name: 'Custom Status',
+      id: 'custom',
+      created_at: 1731592479355
+    },
+    client_status: { mobile: 'online' },
+    activities: [ [Object] ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:46:34.662]
+Presence update
+
+
+[Thu, 14/11/2024, 17:46:34.703]
+{
+  t: 'PRESENCE_UPDATE',
+  s: 5,
+  op: 0,
+  d: {
+    user: { id: '633325625029034033' },
+    status: 'online',
+    roles: [
+      '1104602503363969024',
+      '1104591578410008646',
+      '1104602594753663127'
+    ],
+    premium_since: null,
+    nick: null,
+    guild_id: '1104583934886563943',
+    game: {
+      type: 4,
+      state: 'terminally tired',
+      session_id: null,
+      name: 'Custom Status',
+      id: 'custom',
+      created_at: 1731592479355
+    },
+    client_status: { mobile: 'online' },
+    activities: [ [Object] ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:46:34.712]
+Presence update
+
+
+[Thu, 14/11/2024, 17:46:35.058]
+{
+  t: 'MESSAGE_CREATE',
+  s: 6,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:46:35.603000+00:00',
+    pinned: false,
+    mentions: [ [Object] ],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2023-05-07T08:25:17.823000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306631374018449538',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '<@633325625029034033>\n<@633325625029034033> went online',
+    components: [],
+    channel_id: '1297661319310475307',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1104583934886563943'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:46:35.124]
+{
+  t: 'MESSAGE_CREATE',
+  s: 7,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:46:35.665000+00:00',
+    pinned: false,
+    mentions: [ [Object] ],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-10-10T21:53:45.883000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306631374278758400',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '<@633325625029034033>\n<@633325625029034033> went online',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:47:30.213]
+{
+  t: 'MESSAGE_CREATE',
+  s: 8,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:47:30.752000+00:00',
+    pinned: false,
+    nonce: '1306631601194532864',
+    mentions: [],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-01-14T06:45:33.844000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306631605330116701',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '/eval console.log(123)',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'wantapples',
+      public_flags: 128,
+      id: '633325625029034033',
+      global_name: 'wantapples',
+      discriminator: '0',
+      clan: null,
+      avatar_decoration_data: null,
+      avatar: 'edf8f89ba125413bfe42eb41467c3a3d'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:47:30.564]
+{
+  t: 'MESSAGE_CREATE',
+  s: 9,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:47:30.985000+00:00',
+    pinned: false,
+    mentions: [],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-10-10T21:53:45.883000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306631606307651636',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: 'string',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:47:45.465]
+{
+  t: 'PRESENCE_UPDATE',
+  s: 10,
+  op: 0,
+  d: {
+    user: { id: '633325625029034033' },
+    status: 'idle',
+    roles: [
+      '1104602503363969024',
+      '1104591578410008646',
+      '1104602594753663127'
+    ],
+    premium_since: null,
+    nick: null,
+    guild_id: '1104583934886563943',
+    game: {
+      type: 4,
+      state: 'terminally tired',
+      session_id: null,
+      name: 'Custom Status',
+      id: 'custom',
+      created_at: 1731592479355
+    },
+    client_status: { mobile: 'idle' },
+    activities: [ [Object] ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:47:45.468]
+Presence update
+
+
+[Thu, 14/11/2024, 17:47:45.471]
+{
+  t: 'PRESENCE_UPDATE',
+  s: 11,
+  op: 0,
+  d: {
+    user: { id: '633325625029034033' },
+    status: 'idle',
+    roles: [],
+    premium_since: null,
+    nick: null,
+    guild_id: '1195982019969159199',
+    game: {
+      type: 4,
+      state: 'terminally tired',
+      session_id: null,
+      name: 'Custom Status',
+      id: 'custom',
+      created_at: 1731592479355
+    },
+    client_status: { mobile: 'idle' },
+    activities: [ [Object] ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:47:45.472]
+Presence update
+
+
+[Thu, 14/11/2024, 17:47:45.863]
+{
+  t: 'MESSAGE_CREATE',
+  s: 12,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:47:46.323000+00:00',
+    pinned: false,
+    mentions: [ [Object] ],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2023-05-07T08:25:17.823000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306631670639890443',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '<@633325625029034033>\n<@633325625029034033> went idle',
+    components: [],
+    channel_id: '1297661319310475307',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1104583934886563943'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:47:45.922]
+{
+  t: 'MESSAGE_CREATE',
+  s: 13,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:47:46.395000+00:00',
+    pinned: false,
+    mentions: [ [Object] ],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-10-10T21:53:45.883000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306631670941880423',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '<@633325625029034033>\n<@633325625029034033> went idle',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:49:00.703]
+{
+  t: 'PRESENCE_UPDATE',
+  s: 14,
+  op: 0,
+  d: {
+    user: { id: '633325625029034033' },
+    status: 'online',
+    roles: [
+      '1104602503363969024',
+      '1104591578410008646',
+      '1104602594753663127'
+    ],
+    premium_since: null,
+    nick: null,
+    guild_id: '1104583934886563943',
+    game: {
+      type: 4,
+      state: 'terminally tired',
+      session_id: null,
+      name: 'Custom Status',
+      id: 'custom',
+      created_at: 1731592479355
+    },
+    client_status: { mobile: 'online' },
+    activities: [ [Object] ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:49:00.706]
+Presence update
+
+
+[Thu, 14/11/2024, 17:49:00.708]
+{
+  t: 'PRESENCE_UPDATE',
+  s: 15,
+  op: 0,
+  d: {
+    user: { id: '633325625029034033' },
+    status: 'online',
+    roles: [],
+    premium_since: null,
+    nick: null,
+    guild_id: '1195982019969159199',
+    game: {
+      type: 4,
+      state: 'terminally tired',
+      session_id: null,
+      name: 'Custom Status',
+      id: 'custom',
+      created_at: 1731592479355
+    },
+    client_status: { mobile: 'online' },
+    activities: [ [Object] ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:49:00.709]
+Presence update
+
+
+[Thu, 14/11/2024, 17:49:01.077]
+{
+  t: 'MESSAGE_CREATE',
+  s: 16,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:49:01.593000+00:00',
+    pinned: false,
+    mentions: [ [Object] ],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2023-05-07T08:25:17.823000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306631986344886293',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '<@633325625029034033>\n<@633325625029034033> went online',
+    components: [],
+    channel_id: '1297661319310475307',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1104583934886563943'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:49:01.145]
+{
+  t: 'MESSAGE_CREATE',
+  s: 17,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:49:01.621000+00:00',
+    pinned: false,
+    mentions: [ [Object] ],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-10-10T21:53:45.883000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306631986462593056',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '<@633325625029034033>\n<@633325625029034033> went online',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:49:12.037]
+{
+  t: 'MESSAGE_CREATE',
+  s: 18,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:49:12.546000+00:00',
+    pinned: false,
+    nonce: '1306632028170485760',
+    mentions: [],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-01-14T06:45:33.844000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306632032285233162',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '/eval 1+1',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'wantapples',
+      public_flags: 128,
+      id: '633325625029034033',
+      global_name: 'wantapples',
+      discriminator: '0',
+      clan: null,
+      avatar_decoration_data: null,
+      avatar: 'edf8f89ba125413bfe42eb41467c3a3d'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:49:12.381]
+{
+  t: 'MESSAGE_CREATE',
+  s: 19,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:49:12.897000+00:00',
+    pinned: false,
+    mentions: [],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-10-10T21:53:45.883000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306632033757564939',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '2',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:49:12.417]
+{
+  t: 'MESSAGE_CREATE',
+  s: 20,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:49:12.919000+00:00',
+    pinned: false,
+    mentions: [],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-10-10T21:53:45.883000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306632033849835521',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: 'string',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:49:23.050]
+{
+  t: 'MESSAGE_CREATE',
+  s: 21,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:49:23.575000+00:00',
+    pinned: false,
+    nonce: '1306632074517544960',
+    mentions: [],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-01-14T06:45:33.844000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306632078544338994',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '/eval global',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'wantapples',
+      public_flags: 128,
+      id: '633325625029034033',
+      global_name: 'wantapples',
+      discriminator: '0',
+      clan: null,
+      avatar_decoration_data: null,
+      avatar: 'edf8f89ba125413bfe42eb41467c3a3d'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:54:29.132]
+Connection opened
+
+
+[Thu, 14/11/2024, 17:54:29.170]
+{
+  t: null,
+  s: null,
+  op: 10,
+  d: {
+    heartbeat_interval: 41250,
+    _trace: [ '["gateway-prd-us-east1-d-2gqr",{"micros":0.0}]' ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:54:29.174]
+Server hello
+
+
+[Thu, 14/11/2024, 17:54:29.176]
+Identify message sent with intents: 33537
+
+
+[Thu, 14/11/2024, 17:54:29.523]
+{
+  t: 'READY',
+  s: 1,
+  op: 0,
+  d: {
+    v: 6,
+    user_settings: {},
+    user: {
+      verified: true,
+      username: 'Orion',
+      mfa_enabled: false,
+      id: '1104684507224879215',
+      global_name: null,
+      flags: 0,
+      email: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    session_type: 'normal',
+    session_id: 'd1c17f7a525f0188869e03918a38acdd',
+    resume_gateway_url: 'wss://gateway-us-east1-d.discord.gg',
+    relationships: [],
+    private_channels: [],
+    presences: [],
+    guilds: [ [Object], [Object] ],
+    guild_join_requests: [],
+    geo_ordered_rtc_regions: [ 'bucharest', 'russia', 'warsaw', 'finland', 'stockholm' ],
+    auth: {},
+    application: { id: '1104684507224879215', flags: 8953856 },
+    _trace: [
+      '["gateway-prd-us-east1-d-2gqr",{"micros":188186,"calls":["id_created",{"micros":959,"calls":[]},"session_lookup_time",{"micros":1693,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"discord-sessions-prd-1-93",{"micros":184467,"calls":["start_session",{"micros":135242,"calls":["discord-api-rpc-6c579d6f7d-jktwf",{"micros":130003,"calls":["get_user",{"micros":12479},"get_guilds",{"micros":43703},"send_scheduled_deletion_message",{"micros":9},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":7}]}]},"starting_guild_connect",{"micros":34,"calls":[]},"presence_started",{"micros":5214,"calls":[]},"guilds_started",{"micros":99,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":43852,"calls":[]},"connect_finished",{"micros":43857,"calls":[]},"build_ready",{"micros":18,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]'
+    ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:54:29.528]
+Server is ready
+Version: 6
+Username: Orion
+Id: 1104684507224879215
+
+
+[Thu, 14/11/2024, 17:54:29.536]
+{
+  t: 'GUILD_CREATE',
+  s: 2,
+  op: 0,
+  d: {
+    icon: null,
+    inventory_settings: null,
+    unavailable: false,
+    region: 'deprecated',
+    safety_alerts_channel_id: null,
+    splash: null,
+    discovery_splash: null,
+    large: false,
+    stickers: [],
+    id: '1195982019969159199',
+    roles: [ [Object], [Object], [Object] ],
+    name: '123',
+    members: [ [Object], [Object], [Object] ],
+    features: [],
+    vanity_url_code: null,
+    max_stage_video_channel_users: 50,
+    nsfw_level: 0,
+    premium_tier: 0,
+    nsfw: false,
+    soundboard_sounds: [],
+    max_video_channel_users: 25,
+    embedded_activities: [],
+    public_updates_channel_id: null,
+    threads: [],
+    verification_level: 0,
+    channels: [ [Object], [Object], [Object], [Object], [Object] ],
+    banner: null,
+    owner_id: '633325625029034033',
+    max_members: 500000,
+    description: null,
+    presences: [ [Object], [Object] ],
+    voice_states: [],
+    explicit_content_filter: 0,
+    application_command_counts: {},
+    latest_onboarding_question_id: null,
+    default_message_notifications: 0,
+    application_id: null,
+    incidents_data: null,
+    clan: null,
+    preferred_locale: 'en-US',
+    joined_at: '2024-10-10T21:53:45.883000+00:00',
+    hub_type: null,
+    mfa_level: 0,
+    guild_scheduled_events: [],
+    lazy: true,
+    premium_subscription_count: 0,
+    activity_instances: [],
+    stage_instances: [],
+    member_count: 3,
+    home_header: null,
+    system_channel_flags: 0,
+    premium_progress_bar_enabled: false,
+    version: 1729354193795,
+    system_channel_id: '1195982020405379105',
+    rules_channel_id: null,
+    afk_channel_id: null,
+    afk_timeout: 300,
+    emojis: []
+  }
+}
+
+
+[Thu, 14/11/2024, 17:54:29.638]
+{
+  t: 'GUILD_CREATE',
+  s: 3,
+  op: 0,
+  d: {
+    icon: '4f679077461676d7275160b440350f43',
+    inventory_settings: null,
+    unavailable: false,
+    region: 'deprecated',
+    safety_alerts_channel_id: null,
+    splash: null,
+    discovery_splash: null,
+    large: false,
+    stickers: [],
+    id: '1104583934886563943',
+    roles: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    name: 'Pure Gamma',
+    members: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    features: [ 'SOUNDBOARD', 'GUESTS_ENABLED' ],
+    vanity_url_code: null,
+    max_stage_video_channel_users: 50,
+    nsfw_level: 0,
+    premium_tier: 0,
+    nsfw: false,
+    soundboard_sounds: [],
+    max_video_channel_users: 25,
+    embedded_activities: [],
+    public_updates_channel_id: null,
+    threads: [],
+    verification_level: 0,
+    channels: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object]
+    ],
+    banner: null,
+    owner_id: '633325625029034033',
+    max_members: 500000,
+    description: null,
+    presences: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    voice_states: [],
+    explicit_content_filter: 0,
+    application_command_counts: {},
+    latest_onboarding_question_id: null,
+    default_message_notifications: 1,
+    application_id: null,
+    incidents_data: null,
+    clan: null,
+    preferred_locale: 'en-US',
+    joined_at: '2023-05-07T08:25:17.823000+00:00',
+    hub_type: null,
+    mfa_level: 0,
+    guild_scheduled_events: [],
+    lazy: true,
+    premium_subscription_count: 0,
+    activity_instances: [],
+    stage_instances: [],
+    member_count: 11,
+    home_header: null,
+    system_channel_flags: 0,
+    premium_progress_bar_enabled: false,
+    version: 1729458534403,
+    system_channel_id: '1297661319310475307',
+    rules_channel_id: null,
+    afk_channel_id: null,
+    afk_timeout: 300,
+    emojis: []
+  }
+}
+
+
+[Thu, 14/11/2024, 17:54:31.523]
+{
+  t: 'PRESENCE_UPDATE',
+  s: 4,
+  op: 0,
+  d: {
+    user: { id: '633325625029034033' },
+    status: 'online',
+    roles: [
+      '1104602503363969024',
+      '1104591578410008646',
+      '1104602594753663127'
+    ],
+    premium_since: null,
+    nick: null,
+    guild_id: '1104583934886563943',
+    game: {
+      type: 4,
+      state: 'terminally tired',
+      session_id: null,
+      name: 'Custom Status',
+      id: 'custom',
+      created_at: 1731592479355
+    },
+    client_status: { mobile: 'online' },
+    activities: [ [Object] ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:54:31.527]
+Presence update
+
+
+[Thu, 14/11/2024, 17:54:31.566]
+{
+  t: 'PRESENCE_UPDATE',
+  s: 5,
+  op: 0,
+  d: {
+    user: { id: '633325625029034033' },
+    status: 'online',
+    roles: [],
+    premium_since: null,
+    nick: null,
+    guild_id: '1195982019969159199',
+    game: {
+      type: 4,
+      state: 'terminally tired',
+      session_id: null,
+      name: 'Custom Status',
+      id: 'custom',
+      created_at: 1731592479355
+    },
+    client_status: { mobile: 'online' },
+    activities: [ [Object] ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:54:31.568]
+Presence update
+
+
+[Thu, 14/11/2024, 17:54:31.956]
+{
+  t: 'MESSAGE_CREATE',
+  s: 6,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:54:32.492000+00:00',
+    pinned: false,
+    mentions: [ [Object] ],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2023-05-07T08:25:17.823000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306633374236151949',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '<@633325625029034033>\n<@633325625029034033> went online',
+    components: [],
+    channel_id: '1297661319310475307',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1104583934886563943'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:54:32.072]
+{
+  t: 'MESSAGE_CREATE',
+  s: 7,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:54:32.556000+00:00',
+    pinned: false,
+    mentions: [ [Object] ],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [Array],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-10-10T21:53:45.883000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306633374504452169',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '<@633325625029034033>\n<@633325625029034033> went online',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'Orion',
+      public_flags: 0,
+      id: '1104684507224879215',
+      global_name: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar_decoration_data: null,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:54:48.624]
+{
+  t: 'MESSAGE_CREATE',
+  s: 8,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:54:49.130000+00:00',
+    pinned: false,
+    nonce: '1306633439667027968',
+    mentions: [],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-01-14T06:45:33.844000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306633444020850728',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '/eval global',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'wantapples',
+      public_flags: 128,
+      id: '633325625029034033',
+      global_name: 'wantapples',
+      discriminator: '0',
+      clan: null,
+      avatar_decoration_data: null,
+      avatar: 'edf8f89ba125413bfe42eb41467c3a3d'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+
+[Thu, 14/11/2024, 17:56:11.532]
+Connection opened
+
+
+[Thu, 14/11/2024, 17:56:11.570]
+{
+  t: null,
+  s: null,
+  op: 10,
+  d: {
+    heartbeat_interval: 41250,
+    _trace: [ '["gateway-prd-us-east1-d-ndg9",{"micros":0.0}]' ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:56:11.573]
+Server hello
+
+
+[Thu, 14/11/2024, 17:56:11.581]
+Identify message sent with intents: 33537
+
+
+[Thu, 14/11/2024, 17:56:11.859]
+{
+  t: 'READY',
+  s: 1,
+  op: 0,
+  d: {
+    v: 6,
+    user_settings: {},
+    user: {
+      verified: true,
+      username: 'Orion',
+      mfa_enabled: false,
+      id: '1104684507224879215',
+      global_name: null,
+      flags: 0,
+      email: null,
+      discriminator: '7666',
+      clan: null,
+      bot: true,
+      avatar: '1c3a23e4ee41b4fb8ef80acd23789101'
+    },
+    session_type: 'normal',
+    session_id: 'd40652d5c4c7649bcb584c9c65e1b2f1',
+    resume_gateway_url: 'wss://gateway-us-east1-d.discord.gg',
+    relationships: [],
+    private_channels: [],
+    presences: [],
+    guilds: [ [Object], [Object] ],
+    guild_join_requests: [],
+    geo_ordered_rtc_regions: [ 'bucharest', 'russia', 'warsaw', 'finland', 'stockholm' ],
+    auth: {},
+    application: { id: '1104684507224879215', flags: 8953856 },
+    _trace: [
+      '["gateway-prd-us-east1-d-ndg9",{"micros":123331,"calls":["id_created",{"micros":746,"calls":[]},"session_lookup_time",{"micros":4111,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"discord-sessions-prd-1-57",{"micros":117329,"calls":["start_session",{"micros":55966,"calls":["discord-api-rpc-6c579d6f7d-thm9l",{"micros":52008,"calls":["get_user",{"micros":5503},"get_guilds",{"micros":6196},"send_scheduled_deletion_message",{"micros":7},"guild_join_requests",{"micros":1},"authorized_ip_coro",{"micros":8}]}]},"starting_guild_connect",{"micros":34,"calls":[]},"presence_started",{"micros":9611,"calls":[]},"guilds_started",{"micros":104,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":51586,"calls":[]},"connect_finished",{"micros":51592,"calls":[]},"build_ready",{"micros":18,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]'
+    ]
+  }
+}
+
+
+[Thu, 14/11/2024, 17:56:11.865]
+Server is ready
+Version: 6
+Username: Orion
+Id: 1104684507224879215
+
+
+[Thu, 14/11/2024, 17:56:11.868]
+{
+  t: 'GUILD_CREATE',
+  s: 2,
+  op: 0,
+  d: {
+    members: [ [Object], [Object], [Object] ],
+    discovery_splash: null,
+    premium_progress_bar_enabled: false,
+    icon: null,
+    system_channel_flags: 0,
+    verification_level: 0,
+    large: false,
+    activity_instances: [],
+    nsfw: false,
+    stage_instances: [],
+    afk_channel_id: null,
+    application_command_counts: {},
+    embedded_activities: [],
+    default_message_notifications: 0,
+    vanity_url_code: null,
+    afk_timeout: 300,
+    id: '1195982019969159199',
+    splash: null,
+    system_channel_id: '1195982020405379105',
+    joined_at: '2024-10-10T21:53:45.883000+00:00',
+    name: '123',
+    incidents_data: null,
+    public_updates_channel_id: null,
+    region: 'deprecated',
+    guild_scheduled_events: [],
+    mfa_level: 0,
+    threads: [],
+    soundboard_sounds: [],
+    channels: [ [Object], [Object], [Object], [Object], [Object] ],
+    description: null,
+    clan: null,
+    unavailable: false,
+    inventory_settings: null,
+    lazy: true,
+    owner_id: '633325625029034033',
+    safety_alerts_channel_id: null,
+    emojis: [],
+    banner: null,
+    application_id: null,
+    max_stage_video_channel_users: 50,
+    preferred_locale: 'en-US',
+    explicit_content_filter: 0,
+    rules_channel_id: null,
+    home_header: null,
+    voice_states: [],
+    max_members: 500000,
+    stickers: [],
+    latest_onboarding_question_id: null,
+    nsfw_level: 0,
+    version: 1729354193795,
+    features: [],
+    premium_tier: 0,
+    hub_type: null,
+    max_video_channel_users: 25,
+    presences: [ [Object], [Object] ],
+    roles: [ [Object], [Object], [Object] ],
+    premium_subscription_count: 0,
+    member_count: 3
+  }
+}
+
+
+[Thu, 14/11/2024, 17:56:11.876]
+{
+  t: 'GUILD_CREATE',
+  s: 3,
+  op: 0,
+  d: {
+    members: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    discovery_splash: null,
+    premium_progress_bar_enabled: false,
+    icon: '4f679077461676d7275160b440350f43',
+    system_channel_flags: 0,
+    verification_level: 0,
+    large: false,
+    activity_instances: [],
+    nsfw: false,
+    stage_instances: [],
+    afk_channel_id: null,
+    application_command_counts: {},
+    embedded_activities: [],
+    default_message_notifications: 1,
+    vanity_url_code: null,
+    afk_timeout: 300,
+    id: '1104583934886563943',
+    splash: null,
+    system_channel_id: '1297661319310475307',
+    joined_at: '2023-05-07T08:25:17.823000+00:00',
+    name: 'Pure Gamma',
+    incidents_data: null,
+    public_updates_channel_id: null,
+    region: 'deprecated',
+    guild_scheduled_events: [],
+    mfa_level: 0,
+    threads: [],
+    soundboard_sounds: [],
+    channels: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object]
+    ],
+    description: null,
+    clan: null,
+    unavailable: false,
+    inventory_settings: null,
+    lazy: true,
+    owner_id: '633325625029034033',
+    safety_alerts_channel_id: null,
+    emojis: [],
+    banner: null,
+    application_id: null,
+    max_stage_video_channel_users: 50,
+    preferred_locale: 'en-US',
+    explicit_content_filter: 0,
+    rules_channel_id: null,
+    home_header: null,
+    voice_states: [],
+    max_members: 500000,
+    stickers: [],
+    latest_onboarding_question_id: null,
+    nsfw_level: 0,
+    version: 1729458534403,
+    features: [ 'SOUNDBOARD', 'GUESTS_ENABLED' ],
+    premium_tier: 0,
+    hub_type: null,
+    max_video_channel_users: 25,
+    presences: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    roles: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    premium_subscription_count: 0,
+    member_count: 11
+  }
+}
+
+
+[Thu, 14/11/2024, 17:56:19.193]
+{
+  t: 'MESSAGE_CREATE',
+  s: 4,
+  op: 0,
+  d: {
+    type: 0,
+    tts: false,
+    timestamp: '2024-11-14T14:56:19.720000+00:00',
+    pinned: false,
+    nonce: '1306633819612250112',
+    mentions: [],
+    mention_roles: [],
+    mention_everyone: false,
+    member: {
+      roles: [],
+      premium_since: null,
+      pending: false,
+      nick: null,
+      mute: false,
+      joined_at: '2024-01-14T06:45:33.844000+00:00',
+      flags: 0,
+      deaf: false,
+      communication_disabled_until: null,
+      banner: null,
+      avatar: null
+    },
+    id: '1306633823982850123',
+    flags: 0,
+    embeds: [],
+    edited_timestamp: null,
+    content: '/eval global',
+    components: [],
+    channel_id: '1195982020405379105',
+    author: {
+      username: 'wantapples',
+      public_flags: 128,
+      id: '633325625029034033',
+      global_name: 'wantapples',
+      discriminator: '0',
+      clan: null,
+      avatar_decoration_data: null,
+      avatar: 'edf8f89ba125413bfe42eb41467c3a3d'
+    },
+    attachments: [],
+    guild_id: '1195982019969159199'
+  }
+}
+
+

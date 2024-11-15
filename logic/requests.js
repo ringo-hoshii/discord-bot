@@ -1,5 +1,5 @@
 // Library for handling HTTP requests to Discord's REST API
-const token = require("./token")
+const token = require("../utilities/token")
 
 const requests = {
 

@@ -1,7 +1,7 @@
 const ws = require("ws")
-const events = require("./events")
-const opcodes = require("./opcodes")
-const requests = require("./requests")
+const events = require("../utilities/events")
+const opcodes = require("../utilities/opcodes")
+const requests = require("../logic/requests")
 
 // I don't fucking understand how I'm gonna make it
 // I'm not even particularly interested anymore
@@ -15,6 +15,7 @@ class DiscordSocket {
         }
 
         let self = this
+
         self.default_gateway_url = "wss://gateway.discord.gg/"
         self.default_intents = 1
 
@@ -23,6 +24,8 @@ class DiscordSocket {
         self.url = self.resume_gateway_url || url || self.default_gateway_url
 
         self.guilds = []
+
+	self.id = "1104684507224879215"
 
         self.connect = function () {
             self.socket = new ws.WebSocket(self.url)

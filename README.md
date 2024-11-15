@@ -1,5 +1,12 @@
 # Todo
-- obtain an HTTPS certificate
+- make a control panel for HTTP requests
+    - make an HTTP(S) server on Node.js (it's not even doing anything yet even though i started working on it)
+    - i'm tired of manually changing the protocol to HTTP so trying to make it HTTPS
+        - obtain an HTTPS certificate
+            - look more into LetsEncrypt.org
+            - figure out what ACME (Automatic Certificate Management Environment) is
+            - look into ACME clients (apparently for obtaining a certificate or for "keeping it alive" while the server is running)
+                - Certbot is not supported on Windows anymore
 
 
 
@@ -101,7 +108,7 @@ no.
 
 just plain no.
 
-i will never be able to get off Vim again...
+i will never be able to get off of Vim again...
 i am now the hostage of my own choice
 and i'm saying it in a more (typed ee with one key press again) humorous way
 i'm actually grateful for my choice

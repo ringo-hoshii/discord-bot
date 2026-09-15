@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="test2.css">
+	<link rel="icon" href="favicon.ico">
+	<script src="page.js"></script>
+	<title>Control Panel</title>
+    </head>
+    <body onload="body_onload(event)">
+	<header>
+	    <div class="headerdiv">
+			<div id="headertrademark" onclick="location.href = 'index.html'">
+				<img src="favicon.ico" id="headerimg">
+				<div>
+					<h1>Orion</h1>
+					<p>Multi-Purpose Bot</p>
+				</div>
+			</div>
+		    <a href="index.html">Home</a>
+		    <a href="page2.html">Test Page</a>
+	    </div>
+	</header>
+	<div class="flexdiv">
+	    <h1>HTTP Requests</h1>
+	    <button onclick="loadheaders()">Load Headers</button>
+	    <button onclick="test()">Test</button>
+	</div>
+	<hr>
+	<!--<label for="requesturl">URL</label>-->
+	<div class="container">
+	    <div id="requesturlcontainer">
+		<span>URL</span>
+		<input type="text" id="requesturl" value="https://discord.com/api/" onload="requesturl_onload">
+	    </div>
+	    <div id="buttonsrack">
+		<div id="sendbtncontainer" style="display: inline;">
+		    <button id="sendbtn" onclick="sendbtn_onclick(this)">Send</button>
+		</div>
+	    </div>
+	    <h2 id="requestmethodlabel">Request Method:</h2>
+	    <div id="radiobuttonsdiv">
+		<div class="radiodiv">
+		    <input type="radio" name="requestmethod" value="GET" checked><span class="radiolabel">GET</span>
+		</div>
+		<div class="radiodiv">
+		    <input type="radio" name="requestmethod" value="POST"><span class="radiolabel">POST</span>
+		</div>
+		<div class="radiodiv">
+		    <input type="radio" name="requestmethod" value="PATCH"><span class="radiolabel">PATCH</span>
+		</div>
+		<div class="radiodiv">
+		    <input type="radio" name="requestmethod" value="PUT"><span class="radiolabel">PUT</span>
+		</div>
+		<div class="radiodiv">
+		    <input type="radio" name="requestmethod" value="DELETE"><span class="radiolabel">DELETE</span>
+		</div>
+	    </div>
+	    <div class="headers">
+		<div style="white-space: nowrap;">
+		    <button class="tab" id="displayheaders">Headers</button><button class="tab tab-inactive" id="displaybody">Body</button>
+			<div id="tabview">
+				<ul id="headerslist"></ul>
+				<textarea id="requestbody"></textarea>
+			</div>
+		</div>
+		<button id="addheader">Add</button>
+	    </div>
+	</div>
+    </body>
+</html>

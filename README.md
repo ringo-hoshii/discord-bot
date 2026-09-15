@@ -2,7 +2,14 @@
 >This was my personal project not meant for production use and this README file was used as my personal notes and therefore does not contain any useful information for the end user. If you do happen to use it your best starting place would be to read code (`asd.js` was my main file at the time)
 
 # Todo
-- obtain an HTTPS certificate
+- make a control panel for HTTP requests
+    - make an HTTP(S) server on Node.js (it's not even doing anything yet even though i started working on it)
+    - i'm tired of manually changing the protocol to HTTP so trying to make it HTTPS
+        - obtain an HTTPS certificate
+            - look more into LetsEncrypt.org
+            - figure out what ACME (Automatic Certificate Management Environment) is
+            - look into ACME clients (apparently for obtaining a certificate or for "keeping it alive" while the server is running)
+                - Certbot is not supported on Windows anymore
 
 
 
@@ -104,7 +111,7 @@ no.
 
 just plain no.
 
-i will never be able to get off Vim again...
+i will never be able to get off of Vim again...
 i am now the hostage of my own choice
 and i'm saying it in a more (typed ee with one key press again) humorous way
 i'm actually grateful for my choice
@@ -114,5 +121,23 @@ you need to just "know" by heart
 
 what i'm trying to say is that even if you blind type perfectly it's still easier to
 see the keys subconsciously
+
+## Keyboard too bulky
+
+i actually can see and feel the size of this keyboard so much
+it's so much bigger in comparison to the laptop one
+
+especially the numpad
+even though it's really useful
+like, REALLY useful
+at least after i started using it lol
+at least i have to move my hands less when i'm typing my password in
+
+so um... yeah. the size
+even though a lot of people tend to not include it on their keyboards,
+now i see that it's just too far away from the main part of the keyboard
+(in comparison to the laptop as well)
+
+
 
 

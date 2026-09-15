@@ -1,0 +1,35 @@
+html {
+    color-scheme: dark;
+}
+
+body {
+    background-color: #222;
+}
+
+* {
+    color: #eee;
+    font-family: monospace;
+}
+
+input[type=text] {
+    background-color: #444;
+    border: solid;
+    border-width: 1px;
+    border-radius: 666px;
+    padding: 10px;
+}
+
+button {
+    background-color: #337;
+    border: solid;
+    border-width: 1px;
+    border-radius: 666px;
+}
+
+#requesturlcontainer {
+    margin-bottom: 10px;
+}
+
+#radiobuttonsdiv {
+
+}

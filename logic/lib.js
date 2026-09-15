@@ -12,12 +12,14 @@ const notifier = require("node-notifier")
 const default_gateway_url = "wss://gateway.discord.gg/"
 
 const lib = {
-    stream: fs.createWriteStream("log.txt", { flags: "a" }),
+    stream: fs.createWriteStream("log.txt", { flags: "a" }), // a for append
     requests: require("./requests.js"),
+    discordevents: require("./events.js"),
     starttime: Date.now(),
-    filter: "objectdata.op !== 1 && objectdata.op !== 11 && objectdata.t !== 'GUILD_CREATE'",
+    filter: "objectdata.op !== 11 && objectdata.t !== 'GUILD_CREATE'",
+    file_filter: "objectdata.op !== 1 && objectdata.op !== 11",
     write_log_to_file: true,
-    log_to_channel: false,
+    log_to_channel: true,
     log_channel: "1297669265905946744",
     log_outcoming_packets: true,
     date_locale: "en-GB",
@@ -33,6 +35,8 @@ const lib = {
     },
     dispatches: [],
     guilds: [],
+    onclose_stack: [],
+
 
     connect: function() {
         let url
@@ -69,7 +73,7 @@ const lib = {
                 properties: {
                     device: device,
                     os: os,
-                    browser: browser
+                    browser: browser,
                 }
             }
         }
@@ -87,34 +91,51 @@ const lib = {
         try {
             evaluated_expression = eval(this.filter)
         } catch (err) {
-            console.error(err)
+            //console.error(err)
             evaluated_expression = true
         }
 
         if (evaluated_expression) {
             let objectdata_string
+            let found_logstring = false
 
             if (!objectdata) {
                 objectdata_string = ""
             } else {
-                objectdata_string = "\n" + util.inspect(objectdata)
+                if (this.discordevents[objectdata.t] && this.discordevents[objectdata.t].logstring) {
+                    objectdata_string = "\n" + eval(this.discordevents[objectdata.t].logstring)
+                    found_logstring = true
+                } else {
+                    objectdata_string = "\n" + util.inspect(objectdata)
+                }
             }
 
             let end_log_text = header + "\n" + textdata + objectdata_string
+            let file_log_text = header + "\n" + textdata + util.inspect(objectdata)
             
-            if (this.write_log_to_file) {
-                this.stream.write(end_log_text)
+	    let file_filter_expression = true
+	    try {
+		file_filter_expression = eval(this.file_filter)
+	    } catch (err) {
+		//console.error(err)
+	    }
+
+            if (this.write_log_to_file && file_filter_expression) {
+                this.stream.write(file_log_text)
             }
 
             if (this.log_outcoming_packets) {
                 console.log(end_log_text)
             }
 
-            if (this.log_to_channel && objectdata.d.channel !== this.log_channel) {
-                console.log("ASKLDJHANSLDKJASNHD")
-                let message = {
-                    content: "```" + end_log_text + "```"
+            if (this.log_to_channel && objectdata && objectdata.op === 0 && objectdata.d.channel_id !== this.log_channel) {
+                let message = {}
+                if (found_logstring) {
+                    message.content = objectdata_string
+                } else {
+                    message.content = "```" + end_log_text + "```"
                 }
+
                 this.requests.request(`/channels/${this.log_channel}/messages`, "POST", JSON.stringify(message))
                     .then(response => {
                         console.log(response.status + " " + response.statusText)
@@ -146,10 +167,28 @@ const lib = {
         }
     },
 
+    get_guild_by_id: function (id) {
+	let guild
+	for (i in this.guilds) {
+	    if (this.guilds[i].id === id) {
+		guild = this.guilds[i]
+	    }
+	}
+	return guild
+    },
+
+    get_guild_channels: async function (guild_id) {
+	let channels
+	let response = await this.requests.request("/guilds/" + guild_id + "/channels")
+	channels = await response.json()
+	return channels
+    },
+
     check_for_hello: function (event) {
         let message = JSON.parse(event.data)
         if (message.op === opcodes.HELLO) {
             this.identify(this.token, this.intents, this.device, this.os, this.browser)
+	    // How does this even fucking work if there is no intents variable inside this class
         }
     },
 
@@ -206,6 +245,7 @@ const lib = {
 
     onclose: function (event) {
         lib.log("[CONNECTION CLOSED]")
+        lib.onclose_stack.push(event)
     },
 
     attach_event_listeners: function () {

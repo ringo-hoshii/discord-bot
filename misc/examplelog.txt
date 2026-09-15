@@ -1,0 +1,57 @@
+
+[Tue, 29/10/2024, 16:26:57.545]
+[<<<NEW MESSAGE<<<]{
+  t: 'PRESENCE_UPDATE',
+  s: 9,
+  op: 0,
+  d: {
+    user: {
+      username: 'blitzunion',
+      public_flags: 128,
+      id: '439457606872858637',
+      global_name: 'Blitz Union',
+      discriminator: '0',
+      clan: null,
+      avatar_decoration_data: [Object],
+      avatar: '255b717f550d2919784d18ab31c19c96'
+    },
+    status: 'dnd',
+    roles: [ '1104602503363969024', '1104592026684624956' ],
+    premium_since: null,
+    nick: null,
+    guild_id: '1104583934886563943',
+    game: null,
+    client_status: { mobile: 'dnd' },
+    broadcast: null,
+    activities: []
+  }
+}
+
+
+
+[Tue, 29/10/2024, 16:27:03.532]
+[<<<NEW MESSAGE<<<]{
+  t: 'PRESENCE_UPDATE',
+  s: 11,
+  op: 0,
+  d: {
+    user: { id: '439457606872858637' },
+    status: 'dnd',
+    roles: [ '1104602503363969024', '1104592026684624956' ],
+    premium_since: null,
+    nick: null,
+    guild_id: '1104583934886563943',
+    game: {
+      type: 4,
+      state: 'Хз как дожил до своего возраста',
+      session_id: null,
+      name: 'Custom Status',
+      id: 'custom',
+      created_at: 1730208422935
+    },
+    client_status: { mobile: 'dnd' },
+    broadcast: null,
+    activities: [ [Object] ]
+  }
+}
+

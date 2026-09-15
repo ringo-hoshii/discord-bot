@@ -1,3 +1,6 @@
+>[!WARNING]
+>This was my personal project not meant for production use and this README file was used as my personal notes and therefore does not contain any useful information for the end user. If you do happen to use it your best starting place would be to read code (`asd.js` was my main file at the time)
+
 # Todo
 - obtain an HTTPS certificate
 
